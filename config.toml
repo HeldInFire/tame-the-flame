@@ -1,0 +1,47 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+
+# ===
+title = "Tame The Flame"
+
+theme = "tabi"
+# ===
+
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "css"
+
+external_links_class = "external"
+
+[extra]
+# Put all your custom variables here
+
+skin = "red"
+favicon = "#"
+
+menu = [
+    { name="blog", url="era-1/blog" },
+    { name="rólam", url="era-1/rólam" }
+]
+
+socials = [
+    { name = "github", url = "https://github.com/[name]", icon = "github" },
+    { name = "instagram", url = "https://www.instagram.com/[slug]/", icon = "instagram" }
+]
+
+quick_navigation_buttons = true
+
+remote_repository_url = "https://github.com/Basszhattyuk/org-portal"
+remote_repository_git_platform = "auto"
+remote_repository_branch = "main"
+show_remote_changes = true
+show_remote_source = true
