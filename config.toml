@@ -35,8 +35,8 @@ favicon_emoji = "🔥"
 
 
 menu = [
-    { name="blog", url="era-1/blog" },
-    { name="rólam", url="era-1/rólam" }
+    # { name="blog", url="era-1" },
+    { name="rólam", url="era-1/me" }
 ]
 
 socials = [

@@ -10,5 +10,5 @@ items = [{path="faq.html",title="FAQ"}]
 
 | # | Mi ez a hely?
 ---|---
-[Első Korszak ❤️‍🔥](era-1) | Megjelent cikkek gyűjteménye
+[1. Korszak ❤️‍🔥](era-1) | Megjelent cikkek gyűjteménye
 [💡 Keltető](release-candidate) | Kialakuló cikkek helye
