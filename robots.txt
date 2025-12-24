@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://heldinfire.github.io/tame-the-flame/sitemap.xml
