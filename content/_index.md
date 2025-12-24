@@ -8,4 +8,7 @@ items = [{path="faq.html",title="FAQ"}]
 Érdekes gondolataim vannak, de kell nekik egy rendszer, hogy igazán kiforrhassanak és célba érjenek. Apropó cél, ez a rendszer kulcsa, amelyet követni próbálok majd.
 
 
-[release-candidates](release-candidate)
+| # | Mi ez a hely?
+---|---
+[Első Korszak ❤️‍🔥](era-1) | Megjelent cikkek gyűjteménye
+[💡 Keltető](release-candidate) | Kialakuló cikkek helye
