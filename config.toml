@@ -1,11 +1,15 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://cs7q3f1bero2.share.zrok.io"
 
 # ===
-title = "Tame The Flame"
+title = "🐦‍🔥 Tame The Flame"
 
 theme = "tabi"
+
 # ===
+
+taxonomies = [{name = "tags", feed = true}]
+
 
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -24,9 +28,11 @@ external_links_class = "external"
 
 [extra]
 # Put all your custom variables here
+# relative_urls = true
 
 skin = "red"
-favicon = "#"
+favicon_emoji = "🔥"
+
 
 menu = [
     { name="blog", url="era-1/blog" },
