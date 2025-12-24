@@ -1,0 +1,31 @@
+<a rel="{{ rel_attributes }}"
+    {{ blank_target }}
+    href="{{ target_url }}"
+    class="card"
+    {% if section.taxonomies %}
+    data-tags="{% for tax_name, terms in section.taxonomies %}{% for term in terms | unique %}{{ term | lower }}{% if not loop.last %},{% endif %}{% endfor %}{% endfor %}"
+    {% endif %}>
+    {% if section.extra.local_image %}
+        {% set meta = get_image_metadata(path=section.extra.local_image, allow_missing=true) %}
+        <img class="card-image"
+            alt="{{ section.extra.local_image }}"
+            src="{{ get_url(path=section.extra.local_image) }}"
+            {% if meta.width %}width="{{ meta.width }}"{% endif %}
+            {% if meta.height %}height="{{ meta.height }}"{% endif %}>
+    {% elif section.extra.remote_image %}
+        <img class="card-image"
+            alt="{{ section.extra.remote_image }}"
+            src="{{ section.extra.remote_image }}">
+    {% else %}
+        <div class="card-image-placeholder"></div>
+    {% endif %}
+
+    <div class="card-info">
+        <h2 class="card-title">{{ section.title | markdown(inline=true) | safe }}</h2>
+        <div class="card-description">
+            {% if section.description %}
+                {{ section.description | markdown(inline=true) | safe }}
+            {% endif %}
+        </div>
+    </div>
+</a>

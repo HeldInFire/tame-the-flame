@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% import "macros/section_card.html" as card %}
+
+{% block main_content %}
+    {% if section.extra.section_path -%}
+        {% set section = get_section(path=section.extra.section_path) %}
+    {% endif -%}
+
+    {{ macros_page_header::page_header(title=section.title) }}
+
+    <main>
+        {% if section.content -%}
+            <div id="page-content">{{ section.content | safe }}</div>
+        {% endif %}
+
+        <div class="cards">
+            {% for subs_path in section.subsections %}
+                {% set subs = get_section(path=subs_path) %}
+                
+                 {{ card::input(section=subs) }}
+            {% endfor %}
+        </div>
+    </main>
+
+    {% if paginator %}
+        {%- include "partials/paginate.html" -%}
+    {% endif %}
+{% endblock main_content %}

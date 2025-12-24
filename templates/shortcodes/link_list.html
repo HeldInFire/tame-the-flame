@@ -1,0 +1,5 @@
+<ul>
+{% for item in section.extra.items %}
+    <li><a href="{{ section.extra.base_url }}{{ item.path }}">{{ item.title }}</a></li>
+{% endfor %}
+</ul>
